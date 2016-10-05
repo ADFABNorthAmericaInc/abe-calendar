@@ -2,7 +2,7 @@
 
 var hooks = {
 	afterAbeAttributes: function afterAbeAttributes(obj, str, json, abe) {
-		obj.calendar = abe.getAttr(str, 'calendar')
+		obj.calendar = abe.cmsData.regex.getAttr(str, 'calendar')
 		return obj
 	},
 	afterEditorInput: function afterEditorInput(htmlString, params, abe) {
