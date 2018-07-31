@@ -9,7 +9,7 @@ var hooks = {
 		if(params.calendar === 'true') {
 			htmlString = htmlString + '<script type="text/javascript">';
 			htmlString += 'jQuery(function () {';
-			htmlString += 'jQuery("#' + params.key + '").datetimepicker();';
+			htmlString += `jQuery('[data-id="${params.key}"]').datetimepicker();`;
 			htmlString += '});';
 			htmlString += '</script>';
 
